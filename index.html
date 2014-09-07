@@ -6,8 +6,9 @@
   <title>The Roundlings</title>
 
   <!-- Stylesheets -->
-  <link href="//fonts.googleapis.com/css?family=Sniglet:400,800" rel="stylesheet" type="text/css">
-  <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Sniglet:400,800" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
   <style>
     html, body {
@@ -16,44 +17,142 @@
       font-family:'Sniglet';
       color:#fff;
     }
+
     a,
     a:hover {
       color:#fc0;
     }
-    header {
-      margin:200px auto 100px;
-      width:600px;
-      height:200px;
+
+    .header {
+      padding-bottom:30px;
     }
-    header h1 {
-      margin:0;
-      padding:0;
-      line-height:96px;
-      font-family:'Sniglet';
+    .header h1 {
+      line-height:60px;
+      font-size:60px;
       font-weight:800;
-      font-size:96px;
       color:#fff;
     }
-    header h1>span {
+    .header h1>span {
       display:block;
-      margin:0;
-      padding:0;
-      line-height:48px;
-      font-size:48px;
+      line-height:30px;
+      font-size:30px;
       font-weight:400;
       color:#fc0;
     }
-    header h2 {
-      margin:0;
+    .header h2 {
+      margin:-7px 0 0 240px;
       padding:0;
-      line-height:32px;
-      font-size:32px;
-      font-family:'Sniglet';
-      color:rgba(255,255,255,0.5);
+      line-height:15px;
+      font-size:15px;
+      font-weight:400;
+      opacity:0.5;
     }
-    header p {
-      margin-top:64px;
+
+    .social {
+      font-size:30px;
+    }
+    .social a {
+      display:block;
+      float:left;
+      margin-right:10px;
+      color:#fff;
+      opacity:0.5;
+      transition:opacity 300ms;
+    }
+    .social a:hover {
+      opacity:1;
+    }
+
+    .post-item {
+      margin-bottom:20px;
+    }
+    .post-img {
+      margin-bottom:8px;
+    }
+    .post-title {
       font-size:16px;
+      line-height:20px;
+    }
+    .post-date {
+      font-size:16px;
+      line-height:20px;
+      opacity:0.5;
+    }
+
+    /* Small */
+    @media (min-width: 768px) {
+      .header {
+        padding-top:96px;
+      }
+      .header h1 {
+        line-height:64px;
+        font-size:64px;
+      } 
+      .header h1>span {
+        line-height:32px;
+        font-size:32px;
+      }
+      .social {
+        font-size:32px;
+      }
+    }
+
+    /* Medium */
+    @media (min-width: 992px) {
+      body {
+        padding:64px;
+      }
+      .header h1 {
+        line-height:72px;
+        font-size:72px;
+      } 
+      .header h1>span {
+        line-height:32px;
+        font-size:32px;
+      }
+    }
+
+    /* Large */
+    @media (min-width: 1200px) {
+      body {
+        padding:120px 0;
+      }
+      .social {
+        font-size:40px;
+      }
+      .header {
+        padding-top:120px;
+      }
+      .header h1 {
+        line-height:80px;
+        font-size:80px;
+      }
+      .header h1>span {
+        line-height:40px;
+        font-size:40px;
+      }
+      .header h2 {
+        margin-top:-10px;
+        margin-left:320px;
+        line-height:20px;
+        font-size:20px;
+        opacity:0.50;
+      }
+      .post-item {
+        margin-bottom:80px;
+      }
+      .post-img {
+        margin-bottom:8px;
+      }
+      .post-title {
+        font-size:16px;
+        line-height:20px;
+      }
+      .post-date {
+        font-size:16px;
+        line-height:20px;
+        opacity:0.5;
+      }
     }
   </style>
 
@@ -68,19 +167,53 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body class="clearfix">
 
-  <header>
-    <h1>
-      <span>The</span> Roundlings
-    </h1>
-    <h2>
-      are coming soon.
-    </h2>
-    <p>
-      They are currently on <a href="https://www.facebook.com/roundlings">Facebook</a>.
-    </p>
-  </header>
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-xs-12
+                  col-md-6
+                  header">
+
+        <h1>
+          <span>The</span> Roundlings
+        </h1>
+
+        <h2>
+          by Ian Li
+        </h2>
+
+        <div class="social
+                    clearfix">
+          <a href="https://www.facebook.com/roundlings">
+            <i class="fa fa-facebook-square"></i>
+          </a>
+          <a href="https://twitter.com/roundlings">
+            <i class="fa fa-twitter-square"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="col-xs-12
+                  col-md-6
+                  post-item">
+
+        <img src="/img/content/2014-03-01-bunny-640sq.png"
+             class="img-rounded
+                    img-responsive
+                    post-img">
+
+        <div class="post-title">Bunny with umbrella</div>
+        <div class="post-date">March 1, 2014</div>
+
+      </div>
+
+    </div>
+
+  </div>
 
   {% include analytics.html %}
 
