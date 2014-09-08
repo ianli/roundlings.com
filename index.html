@@ -52,19 +52,40 @@
 
       </div>
 
-      <div class="col-xs-12
-                  col-md-6
-                  post-item">
+      {% for post in site.posts %}
 
-        <img src="/img/content/2014-03-01-bunny-640sq.png"
-             class="img-rounded
-                    img-responsive
-                    post-img">
+        {% if forloop.first %}
 
-        <div class="post-title">Bunny with umbrella</div>
-        <div class="post-date">March 1, 2014</div>
+          {% capture post_class %} col-xs-12 col-md-6 {% endcapture %}
 
-      </div>
+          {% capture post_image %}
+            {{ post.image | replace: '<!--format-->', '640.png' }}
+          {% endcapture %}
+
+        {% else %}
+
+          {% capture post_class %} col-xs-6 col-md-4 {% endcapture %}
+
+          {% capture post_image %}
+            {{ post.image | replace: '<!--format-->', '320.png' }}
+          {% endcapture %}
+
+        {% endif %}
+
+        <div class="{{ post_class }}
+                    post-item">
+
+          <img src="{{ post.image | replace: '<!--format-->', '640.png' }}"
+               class="img-rounded
+                      img-responsive
+                      post-img">
+
+          <div class="post-title">{{ post.title }}</div>
+          <div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
+
+        </div>
+
+      {% endfor %}
 
     </div>
 
