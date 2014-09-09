@@ -57,8 +57,13 @@ a:hover {
 }
 
 .post-item {
-  margin-bottom:20px;
+  margin:0 0 20px;
+  color:#fff;
 }
+  .post-item:hover {
+    color:#fff;
+    text-decoration:none;
+  }
 .post-img {
   margin-bottom:8px;
 }
@@ -74,9 +79,7 @@ a:hover {
 
 /* Small */
 @media (min-width: 768px) {
-  .header {
-    padding-top:96px;
-  }
+
   .header h1 {
     line-height:64px;
     font-size:64px;
@@ -85,34 +88,52 @@ a:hover {
     line-height:32px;
     font-size:32px;
   }
+  .header h2 {
+    margin-top:-8px;
+    margin-left:260px;
+    line-height:16px;
+    font-size:16px;
+  }
+
   .social {
     font-size:32px;
   }
+
+
 }
 
 /* Medium */
 @media (min-width: 992px) {
-  body {
-    padding:64px;
+  .header {
+    padding-top:48px;
   }
   .header h1 {
     line-height:72px;
     font-size:72px;
   } 
   .header h1>span {
-    line-height:32px;
-    font-size:32px;
+    line-height:36px;
+    font-size:36px;
+  }
+  .header h2 {
+    margin-top:-9px;
+    margin-left:290px;
+    line-height:18px;
+    font-size:18px;
+  }
+
+  .container-index {
+    margin-top:64px;
+    margin-bottom:64px;
+  }
+
+  .container-posts .header {
+    padding-top:0;
   }
 }
 
 /* Large */
 @media (min-width: 1200px) {
-  body {
-    padding:120px 0;
-  }
-  .social {
-    font-size:40px;
-  }
   .header {
     padding-top:120px;
   }
@@ -129,21 +150,26 @@ a:hover {
     margin-left:320px;
     line-height:20px;
     font-size:20px;
-    opacity:0.50;
   }
+
+  .social {
+    font-size:40px;
+  }
+
   .post-item {
     margin-bottom:80px;
   }
-  .post-img {
-    margin-bottom:8px;
+
+  .container-index {
+    margin-top:120px;
+    margin-bottom:120px;
   }
-  .post-title {
-    font-size:16px;
-    line-height:20px;
+
+  .container-posts {
+    margin-top:40px;
+    margin-bottom:40px;
   }
-  .post-date {
-    font-size:16px;
-    line-height:20px;
-    opacity:0.5;
+  .container-posts .header {
+    padding-top:0;
   }
 }
