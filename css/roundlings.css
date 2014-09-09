@@ -41,6 +41,11 @@ a:hover {
   opacity:0.5;
 }
 
+.logo {
+  width:90%;
+  max-width:400px;
+}
+
 .social {
   font-size:30px;
 }
@@ -120,6 +125,10 @@ a:hover {
     margin-left:290px;
     line-height:18px;
     font-size:18px;
+  }
+
+  .logo {
+    max-width:90%;
   }
 
   .container-index {
