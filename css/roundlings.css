@@ -63,7 +63,7 @@ a:hover {
 }
 
 .container-index,
-.container-post {
+.container-posts {
   margin-top:15px;
   margin-bottom:40px;
 }
@@ -102,7 +102,7 @@ a:hover {
   .header {
     padding-top:120px;
   }
-  
+
   .social {
     font-size:40px;
   }
