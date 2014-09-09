@@ -2,7 +2,8 @@
 layout: default
 ---
 
-<div class="container">
+<div class="container
+            container-index">
 
   <div class="row">
 
@@ -45,15 +46,16 @@ layout: default
         {% capture post_class %} col-xs-6 col-md-4 {% endcapture %}
 
         {% capture post_image %}
-          {{ post.image | replace: '<!--format-->', '320.png' }}
+          {{ post.image | replace: '<!--format-->', '640.png' }}
         {% endcapture %}
 
       {% endif %}
 
-      <div class="{{ post_class }}
-                  post-item">
+      <a href="{{ post.url }}"
+         class="{{ post_class }}
+                post-item">
 
-        <img src="{{ post.image | replace: '<!--format-->', '640.png' }}"
+        <img src="{{ post_image }}"
              class="img-rounded
                     img-responsive
                     post-img">
@@ -61,7 +63,7 @@ layout: default
         <div class="post-title">{{ post.title }}</div>
         <div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
 
-      </div>
+      </a>
 
     {% endfor %}
 
