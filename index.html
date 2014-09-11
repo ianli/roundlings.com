@@ -30,7 +30,9 @@ layout: default
 
     {% for post in site.posts %}
 
-      {% if forloop.first %}
+      {% case forloop.index %}
+
+      {% when 1 %}
 
         {% capture post_class %} col-xs-12 col-md-6 {% endcapture %}
 
@@ -38,15 +40,23 @@ layout: default
           {{ post.image | replace: '<!--format-->', '640.png' }}
         {% endcapture %}
 
-      {% else %}
+      {% when 2 or 3 or 4 %}
 
-        {% capture post_class %} col-xs-6 col-md-4 {% endcapture %}
+        {% capture post_class %} col-xs-12 col-md-4 {% endcapture %}
 
         {% capture post_image %}
           {{ post.image | replace: '<!--format-->', '640.png' }}
         {% endcapture %}
 
-      {% endif %}
+      {% else %}
+
+        {% capture post_class %} col-xs-6 col-md-2 {% endcapture %}
+
+        {% capture post_image %}
+          {{ post.image | replace: '<!--format-->', '320.png' }}
+        {% endcapture %}       
+
+      {% endcase %}
 
       <a href="{{ post.url }}"
          class="{{ post_class }}
