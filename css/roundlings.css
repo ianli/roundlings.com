@@ -4,9 +4,10 @@
  * http://roundlings.com
  */
 
-html, body {
+body {
   background-color:#44a9eb;
   height:100%;
+  font-size:16px;
   font-family:'Sniglet';
   color:#fff;
 }
@@ -16,6 +17,11 @@ a:hover {
   color:#fc0;
 }
 
+
+/****************************
+ * Header
+ */
+
 .header {
   padding-bottom:20px;
 }
@@ -24,6 +30,21 @@ a:hover {
   width:90%;
   max-width:400px;
 }
+
+
+/****************************
+ * Metadata
+ */
+
+.metadata {
+  padding-top:20px;
+  padding-bottom:40px;
+}
+
+
+/****************************
+ * Social
+ */
 
 .social {
   line-height:1em;
@@ -41,6 +62,11 @@ a:hover {
   opacity:1;
 }
 
+
+/****************************
+ * Post item
+ */
+
 .post-item {
   margin:0 0 20px;
   color:#fff;
@@ -52,15 +78,19 @@ a:hover {
 .post-img {
   margin-bottom:8px;
 }
-.post-title {
-  font-size:16px;
-  line-height:20px;
+.post-title,
+.post-date {
+  font-size:1em;
+  line-height:1.25em;
 }
 .post-date {
-  font-size:16px;
-  line-height:20px;
   opacity:0.5;
 }
+
+
+/****************************
+ * Page types
+ */
 
 .container-index,
 .container-posts {
@@ -68,8 +98,32 @@ a:hover {
   margin-bottom:40px;
 }
 
+
+/****************************
+ * Post page
+ */
+
+.container-posts .post-img {
+  margin:0 auto;
+}
+
+.container-posts .post-title,
+.container-posts .post-date {
+/*  font-size:1.5em;
+  line-height:1.5em;*/
+}
+
+
+/****************************
+ * Responsive
+ */
+
 /* Small */
 @media (min-width: 768px) {
+
+  .container-posts {
+    font-size:20px;
+  }
 
   .social {
     font-size:32px;
@@ -79,6 +133,11 @@ a:hover {
 
 /* Medium */
 @media (min-width: 992px) {
+
+  .container-posts {
+    font-size:20px;
+  }
+
   .header {
     padding-top:48px;
   }
@@ -99,6 +158,11 @@ a:hover {
 
 /* Large */
 @media (min-width: 1200px) {
+
+  .container-posts {
+    font-size:20px;
+  }
+
   .header {
     padding-top:120px;
   }

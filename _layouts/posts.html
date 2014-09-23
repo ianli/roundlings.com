@@ -29,15 +29,17 @@ layout: default
     </div>
 
     <div class="col-xs-12
-                col-md-offset-3 col-md-6">
-
-      <img src="/{{ page.image | replace: '<!--format-->', '640.png' }}"
-           class="img-rounded
-                  img-responsive
-                  post-img">
+                col-md-offset-3 col-md-6
+                metadata">
 
       <div class="post-title">{{ page.title }}</div>
       <div class="post-date">{{ page.date | date: "%b %-d, %Y" }}</div>
+      
+    </div>
+
+    <div class="col-xs-12">
+
+      {{ content }}
 
     </div>
   </div>
