@@ -23,7 +23,11 @@ a:hover {
  */
 
 .header {
-  padding-bottom:20px;
+  padding-bottom:15px;
+}
+
+.header > a {
+  display:block;
 }
 
 .logo {
@@ -38,7 +42,7 @@ a:hover {
 
 .metadata {
   padding-top:20px;
-  padding-bottom:40px;
+  padding-bottom:10px;
 }
 
 
@@ -46,11 +50,13 @@ a:hover {
  * Social
  */
 
-.social {
+.social,
+.actions {
   line-height:1em;
-  font-size:30px;
+  font-size:44px;
 }
-.social a {
+.social a,
+.actions a {
   display:block;
   float:left;
   margin-right:10px;
@@ -58,7 +64,8 @@ a:hover {
   opacity:0.5;
   transition:opacity 300ms;
 }
-.social a:hover {
+.social a:hover,
+.actions a:hover {
   opacity:1;
 }
 
@@ -125,8 +132,18 @@ a:hover {
     font-size:20px;
   }
 
-  .social {
-    font-size:32px;
+  .header {
+    padding-bottom:30px;
+  }
+
+  .metadata {
+    padding-top:30px;
+    padding-bottom:15px;
+  }
+
+  .social,
+  .actions {
+    font-size:44px;
   }
 
 }
