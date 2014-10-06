@@ -35,6 +35,14 @@ a:hover {
   max-width:400px;
 }
 
+/****************************
+ * Header
+ */
+
+footer {
+  padding-bottom:30px;
+}
+
 
 /****************************
  * Metadata
@@ -102,7 +110,7 @@ a:hover {
 .container-index,
 .container-posts {
   margin-top:15px;
-  margin-bottom:40px;
+  margin-bottom:15px;
 }
 
 
@@ -194,7 +202,7 @@ a:hover {
 
   .container-index {
     margin-top:120px;
-    margin-bottom:120px;
+    margin-bottom:40px;
   }
 
   .container-posts {
