@@ -17,13 +17,18 @@ a:hover {
   color:#fc0;
 }
 
+hr.space {
+  clear:both;
+  margin:0;
+  height:20px;
+  border:none;
+}
 
 /****************************
  * Header
  */
 
 .header {
-  padding-bottom:15px;
 }
 
 .header > a {
@@ -49,8 +54,6 @@ footer {
  */
 
 .metadata {
-  padding-top:20px;
-  padding-bottom:10px;
 }
 
 
@@ -91,7 +94,6 @@ footer {
     text-decoration:none;
   }
 .post-img {
-  margin-bottom:8px;
 }
 .post-title,
 .post-date {
@@ -102,6 +104,10 @@ footer {
   opacity:0.5;
 }
 
+.post-text {
+  font-size:1em;
+  opacity:0.75;
+}
 
 /****************************
  * Page types
@@ -124,8 +130,6 @@ footer {
 
 .container-posts .post-title,
 .container-posts .post-date {
-/*  font-size:1.5em;
-  line-height:1.5em;*/
 }
 
 
@@ -138,15 +142,6 @@ footer {
 
   .container-posts {
     font-size:20px;
-  }
-
-  .header {
-    padding-bottom:30px;
-  }
-
-  .metadata {
-    padding-top:30px;
-    padding-bottom:15px;
   }
 
   .social,
@@ -197,7 +192,7 @@ footer {
   }
 
   .post-item {
-    margin-bottom:80px;
+    margin-bottom:30px;
   }
 
   .container-index {
