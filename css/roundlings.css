@@ -105,10 +105,15 @@ footer {
   opacity:0.5;
 }
 
-.post-text {
+.post-text * {
   font-size:1em;
-  opacity:0.75;
+  color:rgba(255,255,255,0.75);
 }
+  .post-text b,
+  .post-text strong {
+    font-weight:normal;
+    color:#fff;
+  }
 
 /****************************
  * Page types
