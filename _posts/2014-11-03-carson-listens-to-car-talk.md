@@ -5,7 +5,7 @@ image: "img/content/public-radio-carson-<!--format-->"
 image_large: "/img/content/public-radio-carson-960x640.png"
 ---
 
-Carson's favorite public radio show is [Car Talk](http://www.cartalk.com/), a radio show about automobiles and automotive repair.
+[Carson](/2014/10/25/carson.html)'s favorite public radio show is [Car Talk](http://www.cartalk.com/), a radio show about automobiles and automotive repair.
 She loves the humorous banter and insightful advice of the two hosts, brothers Tom and Ray Magliozzi, known as _Click and Clack, the Tappet Brothers_.
 
 ---

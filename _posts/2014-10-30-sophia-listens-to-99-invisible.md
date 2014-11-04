@@ -5,7 +5,7 @@ image: "img/content/public-radio-sophia-<!--format-->"
 image_large: "/img/content/public-radio-sophia-640x960.png"
 ---
 
-Sophia's favorite podcast is [99% Invisible](http://99percentinvisible.org/), a radio show about design and architecture.
+[Sophia](/2014/10/24/sophia.html)'s favorite podcast is [99% Invisible](http://99percentinvisible.org/), a radio show about design and architecture.
 She likes the show because it reveals the amount of careful thought applied to the creation of buildings and environments. Some recent episodes that she likes are:
 
 * [Holdout](http://99percentinvisible.org/episode/holdout/) - One of the stories features Edith Macefield, an 85-year-old woman, who defied big developers from purchasing her land.
