@@ -1,5 +1,7 @@
 # Build settings
 markdown: kramdown
 
+hostname: www.roundlings.com
+
 gems:
   - jekyll-redirect-from
