@@ -69,9 +69,7 @@ footer {
 }
 .social a,
 .actions a {
-  display:block;
-  float:left;
-  margin-right:10px;
+  display:inline-block;
   color:#fff;
   opacity:0.5;
   transition:opacity 300ms;
