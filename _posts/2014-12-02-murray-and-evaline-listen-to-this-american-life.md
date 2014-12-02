@@ -17,3 +17,15 @@ Here are some of their favorite episodes related to traveling and driving:
 * [Auto Show](http://www.thisamericanlife.org/radio-archives/episode/279/auto-show)
 
 If you like This American Life, [make a contribution to support them](https://www.chicagopublicmedia.org/give/support-american-life).
+
+----
+
+This drawing is inspired by two comic book panels.
+The first panel is from the _Sandman #45_ pencilled by Jill Thompson.
+It shows the characters [Dream and Delirium driving](https://twitter.com/ianli/status/530566418903728129) to find one of their brothers, Destruction.
+In the back seat is Matthew who nervously gives Delirium driving directions.
+
+The second panel is from _Nation X #1_ drawn by Michael Allred.
+It shows the characters Wolverine and Nightcrawler driving while listening to _This American Life_.
+Marvel and This American Life [collaborated to turn the comic book panel into a poster](http://www.thisamericanlife.org/blog/2010/11/this-american-life-x-men-poster).
+
