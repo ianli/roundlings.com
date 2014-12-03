@@ -5,6 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  {% assign excerpt = page.excerpt | strip_html | truncatewords: 50 %}
+  {% assign excerpt_size = excerpt | size %}
+  {% if excerpt_size > 0 %}
+    <meta name="description" content="{{ excerpt }}">
+  {% else %}
+    <meta name="description" content="Follow the adventures of cute colorful characters called The Roundlings.">
+  {% endif %}
+
   {% if page.title %}
     <title>{{ page.title }} - The Roundlings</title>
   {% else %}
