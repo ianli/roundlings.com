@@ -9,13 +9,19 @@ body {
   height:100%;
   font-size:16px;
   font-family:'Sniglet';
-  color:#fff;
+  /*color:#fff;*/
+  color:rgba(255,255,255,0.75);
   -webkit-font-smoothing:antialiased;
 }
 
 a,
 a:hover {
-  color:#fc0;
+  /*color:#fc0;*/
+  color:#fff;
+}
+
+hr {
+  border-top:1px solid rgba(255,255,255,0.38);
 }
 
 hr.space {
@@ -23,6 +29,22 @@ hr.space {
   margin:0;
   height:20px;
   border:none;
+}
+hr.space-double {
+  clear:both;
+  margin:0;
+  height:40px;
+  border:none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin:0;
+  color:#fff;
 }
 
 /****************************
@@ -42,12 +64,16 @@ hr.space {
 }
 
 /****************************
- * Header
+ * Footer
  */
 
 footer {
-  padding-bottom:30px;
+  margin:0 0 40px;
+  text-align:center;
 }
+  footer nav {
+    font-size:20px;
+  }
 
 
 /****************************
@@ -94,6 +120,9 @@ footer {
   }
 .post-img {
 }
+.post-title {
+  color:rgba(255,255,255,0.87);
+}
 .post-title,
 .post-date {
   font-size:1em;
@@ -105,7 +134,6 @@ footer {
 
 .post-text * {
   font-size:1em;
-  color:rgba(255,255,255,0.75);
 }
   .post-text b,
   .post-text strong {
@@ -115,9 +143,6 @@ footer {
   .post-text a {
     color:#fc0;
     text-decoration:underline;
-  }
-  .post-text hr {
-    border-top:1px solid rgba(255,255,255,0.3);
   }
 
 /****************************
