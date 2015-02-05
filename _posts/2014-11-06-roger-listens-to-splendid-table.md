@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: Roger listens to Splendid Table
-image: "img/content/public-radio-roger-<!--format-->"
+image: "img/content/public-radio-roger-<!--size-->.png"
 image_large: "/img/content/public-radio-roger-960x640.png"
 ---
 

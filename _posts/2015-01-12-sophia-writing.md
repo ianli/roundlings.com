@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: Sophia Writing
-image: "img/content/sophia-writing-<!--format-->"
+image: "img/content/sophia-writing-<!--size-->.png"
 image_large: "/img/content/sophia-writing-640.png"
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: Roger Celebrating
-image: "img/content/roger-celebrating-<!--format-->"
+image: "img/content/roger-celebrating-<!--size-->.png"
 image_large: "/img/content/roger-celebrating-640x960.png"
 ---
 

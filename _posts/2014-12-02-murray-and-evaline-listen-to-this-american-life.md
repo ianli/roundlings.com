@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: Murray and Evaline listen to This American Life
-image: "img/content/public-radio-murray-evaline-<!--format-->"
+image: "img/content/public-radio-murray-evaline-<!--size-->.png"
 image_large: "/img/content/public-radio-murray-evaline-640x960.png"
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: Murray Running
-image: "img/content/murray-running-<!--format-->"
+image: "img/content/murray-running-<!--size-->.png"
 image_large: "/img/content/murray-running-640x960.png"
 ---
 

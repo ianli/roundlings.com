@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: Freda listens to Fresh Air
-image: "img/content/public-radio-freda-<!--format-->"
+image: "img/content/public-radio-freda-<!--size-->.png"
 image_large: "/img/content/public-radio-freda-960x640.png"
 ---
 

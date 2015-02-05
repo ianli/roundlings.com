@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: The Birthday Parade
-image: "img/content/2014-10-06-birthday-parade-<!--format-->"
+image: "img/content/2014-10-06-birthday-parade-<!--size-->.png"
 image_large: "/img/content/2014-10-06-birthday-parade-960x427.png"
 redirect_from: "/2014/10/06/birthday-parade.html"
 ---
