@@ -27,13 +27,13 @@ hr {
 hr.space {
   clear:both;
   margin:0;
-  height:20px;
+  height:24px;
   border:none;
 }
 hr.space-double {
   clear:both;
   margin:0;
-  height:40px;
+  height:48px;
   border:none;
 }
 
@@ -43,8 +43,8 @@ h3,
 h4,
 h5,
 h6 {
-  margin:0;
-  color:#fff;
+  margin:0 0 24px;
+  color:rgba(255,255,255,0.87);
 }
 
 /****************************
@@ -121,15 +121,14 @@ footer {
 .post-img {
 }
 .post-title {
+  line-height:1.25em;
+  font-size:1.25em;
   color:rgba(255,255,255,0.87);
 }
-.post-title,
 .post-date {
-  font-size:1em;
   line-height:1.25em;
-}
-.post-date {
-  opacity:0.5;
+  font-size:1em;
+  color:rgba(255,255,255,0.54);
 }
 
 .post-text * {
