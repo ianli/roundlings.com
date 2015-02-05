@@ -45,7 +45,7 @@ sitemap:
         {% capture post_class %} col-xs-12 col-md-6 {% endcapture %}
 
         {% capture post_image %}
-          {{ post.image | replace: '<!--format-->', '640.png' }}
+          {{ post.image | replace: '<!--size-->', '640' }}
         {% endcapture %}
 
       {% when 2 or 3 or 4 %}
@@ -53,7 +53,7 @@ sitemap:
         {% capture post_class %} col-xs-12 col-md-4 {% endcapture %}
 
         {% capture post_image %}
-          {{ post.image | replace: '<!--format-->', '640.png' }}
+          {{ post.image | replace: '<!--size-->', '640' }}
         {% endcapture %}
 
       {% else %}
@@ -61,7 +61,7 @@ sitemap:
         {% capture post_class %} col-xs-6 col-md-2 {% endcapture %}
 
         {% capture post_image %}
-          {{ post.image | replace: '<!--format-->', '320.png' }}
+          {{ post.image | replace: '<!--size-->', '160' }}
         {% endcapture %}       
 
       {% endcase %}
