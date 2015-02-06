@@ -32,6 +32,13 @@ sitemap:
       </div>
       -->
 
+      <div class="visible-md
+                  visible-lg"
+           style="text-align:center;">
+        <hr class="space-double">
+        {% include tinyletter.html %}
+      </div>
+
       <hr class="space">
 
     </div>
@@ -50,7 +57,15 @@ sitemap:
 
       {% when 2 or 3 or 4 %}
 
-        {% capture post_class %} col-xs-12 col-md-4 {% endcapture %}
+        {% capture post_class %} col-xs-12 col-sm-6 col-md-4 {% endcapture %}
+
+        {% capture post_image %}
+          {{ post.image | replace: '<!--size-->', '640' }}
+        {% endcapture %}
+
+      {% when 5 %}
+
+        {% capture post_class %} col-xs-6 col-sm-6 col-md-2 {% endcapture %}
 
         {% capture post_image %}
           {{ post.image | replace: '<!--size-->', '640' }}
@@ -58,17 +73,18 @@ sitemap:
 
       {% else %}
 
-        {% capture post_class %} col-xs-6 col-md-2 {% endcapture %}
+        {% capture post_class %} col-xs-6 col-sm-3 col-md-2 {% endcapture %}
 
         {% capture post_image %}
-          {{ post.image | replace: '<!--size-->', '160' }}
+          {{ post.image | replace: '<!--size-->', '320' }}
         {% endcapture %}       
 
       {% endcase %}
 
       <a href="{{ post.url }}"
          class="{{ post_class }}
-                post-item">
+                post-item"
+         style="text-align:center">
 
         <img src="{{ post_image }}"
              class="img-rounded
@@ -76,6 +92,17 @@ sitemap:
                     post-img">
 
       </a>
+
+      {% if forloop.index == 1 %}
+
+        <div class="visible-xs
+                    visible-sm"
+            style="text-align:center;">
+          <hr class="space">
+          {% include tinyletter.html %}
+          <hr class="space-double">
+        </div>
+      {% endif %}
 
     {% endfor %}
 
