@@ -72,24 +72,26 @@
 
           <form action="https://tinyletter.com/roundlings" 
                 method="post"
-                target="_blank"
-                class="form-inline">
+                target="_blank">
             <p>
               Receive drawings and updates in your inbox.
             </p>
-            <div class="form-group">
-              <input type="text"
-                     name="email"
-                     id="tlemail"
-                     placeholder="Email address"
-                     class="form-control" />
 
-              <input type="hidden" value="1" name="embed"/>
-              <input type="submit" 
-                     value="Subscribe"
-                     class="btn btn-default" />
+            <input type="hidden" value="1" name="embed"/>
 
-            </div>
+            <input type="text"
+                   name="email"
+                   id="tlemail"
+                   placeholder="Email address"
+                   class="form-control"
+                   style="display:inline-block;
+                          width:160px;" />
+            
+            <input type="submit" 
+                   value="Subscribe"
+                   class="btn btn-default"
+                   style="display;inline-block;" />
+
           </form>
 
           <hr class="space-double">
