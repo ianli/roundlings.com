@@ -1,5 +1,10 @@
 ---
 layout: null
+# References:
+# - Generating a sitemap in Jekyll without a plugin
+#   http://davidensinger.com/2013/03/generating-a-sitemap-in-jekyll-without-a-plugin/
+# - Building a better sitemap.xml with Jekyll
+#   http://davidensinger.com/2013/11/building-a-better-sitemap-xml-with-jekyll/
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -19,7 +24,15 @@ layout: null
     {% if page.sitemap != null and page.sitemap != empty %}
       <url>
         <loc>http://{{ site.hostname }}{{ page.url }}</loc>
-        <lastmod>{{ page.sitemap.lastmod | date_to_xmlschema }}</lastmod>
+
+        {% if page.sitemap.lastmod %}
+          <lastmod>{{ page.sitemap.lastmod | date_to_xmlschema }}</lastmod>
+        {% elsif page.date %}
+          <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+        {% else %}
+          <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+        {% endif %}
+
         <changefreq>{{ page.sitemap.changefreq }}</changefreq>
         <priority>{{ page.sitemap.priority }}</priority>
        </url>
