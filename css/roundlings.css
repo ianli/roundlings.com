@@ -5,19 +5,17 @@
  */
 
 body {
-  background-color:#44a9eb;
+  background-color:#fff;
   height:100%;
-  font-size:16px;
-  font-family:'Sniglet';
-  /*color:#fff;*/
-  color:rgba(255,255,255,0.75);
+  font-size:24px;
+  font-family:'Gaegu', Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(0,0,0,.87);
   -webkit-font-smoothing:antialiased;
 }
 
 a,
 a:hover {
-  /*color:#fc0;*/
-  color:#fff;
+  color:#03A9F4;
 }
 
 hr {
@@ -44,7 +42,8 @@ h4,
 h5,
 h6 {
   margin:0 0 24px;
-  color:rgba(255,255,255,0.87);
+  font-weight: bold;
+  /* color:rgba(255,255,255,0.87); */
 }
 
 /****************************
@@ -71,37 +70,42 @@ footer {
   margin:0 0 40px;
   text-align:center;
 }
-  footer nav {
-    font-size:20px;
-  }
-
 
 /****************************
- * Metadata
+ * Arrows
  */
 
-.metadata {
+.rr-arrows {
+  font-size: 2rem;
 }
 
+.rr-arrows a {
+  display: inline-block;
+  padding: 0 16px;
+  color: rgba(0,0,0,.87);
+  opacity: 0.5;
+}
+
+.rr-arrows a:hover {
+  opacity: 1;
+}
 
 /****************************
- * Social
+ * Share buttons
  */
 
-.social,
-.actions {
+.rr-share {
   line-height:1em;
-  font-size:44px;
+  font-size: 1.5rem;
 }
-.social a,
-.actions a {
+.rr-share a {
   display:inline-block;
-  color:#fff;
+  padding-left: 16px;
+  color: rgba(0,0,0,.87);
   opacity:0.5;
   transition:opacity 300ms;
 }
-.social a:hover,
-.actions a:hover {
+.rr-share a:hover {
   opacity:1;
 }
 
@@ -111,38 +115,15 @@ footer {
  */
 
 .post-item {
-  margin:0 0 20px;
-  color:#fff;
+  margin-bottom:30px;
 }
   .post-item:hover {
-    color:#fff;
     text-decoration:none;
   }
-.post-img {
-}
-.post-title {
-  line-height:1.25em;
-  font-size:1.25em;
-  color:rgba(255,255,255,0.87);
-}
-.post-date {
-  line-height:1.25em;
-  font-size:1em;
-  color:rgba(255,255,255,0.54);
-}
 
-.post-text * {
-  font-size:1em;
+.post-body {
+  /* Do nothing */
 }
-  .post-text b,
-  .post-text strong {
-    font-weight:normal;
-    color:#fff;
-  }
-  .post-text a {
-    color:#fc0;
-    text-decoration:underline;
-  }
 
 /****************************
  * Page types
@@ -154,45 +135,16 @@ footer {
   margin-bottom:15px;
 }
 
-
-/****************************
- * Post page
- */
-
-.container-posts .post-img {
-  margin:0 auto;
-}
-
-.container-posts .post-title,
-.container-posts .post-date {
-}
-
-
 /****************************
  * Responsive
  */
 
 /* Small */
 @media (min-width: 768px) {
-
-  .container-posts {
-    font-size:20px;
-  }
-
-  .social,
-  .actions {
-    font-size:44px;
-  }
-
 }
 
 /* Medium */
 @media (min-width: 992px) {
-
-  .container-posts {
-    font-size:20px;
-  }
-
   .header {
     padding-top:48px;
   }
@@ -213,21 +165,8 @@ footer {
 
 /* Large */
 @media (min-width: 1200px) {
-
-  .container-posts {
-    font-size:20px;
-  }
-
   .header {
     padding-top:120px;
-  }
-
-  .social {
-    font-size:40px;
-  }
-
-  .post-item {
-    margin-bottom:30px;
   }
 
   .container-index {

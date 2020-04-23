@@ -14,15 +14,15 @@
   {% endif %}
 
   {% if page.title %}
-    <title>{{ page.title }} - The Roundlings</title>
+    <title>{{ page.title }} - Roundlings</title>
   {% else %}
-    <title>The Roundlings</title>
+    <title>Roundlings by Ian Li</title>
   {% endif %}
 
   <!-- Stylesheets -->
-  <link href="//fonts.googleapis.com/css?family=Sniglet:400,800" rel="stylesheet">
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css2?family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
+  <link href="//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
   <link href="/css/roundlings.css" rel="stylesheet">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -31,10 +31,6 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
-
-  <!-- Javascript -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -43,8 +39,8 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-xs-12
-                    col-md-offset-3 col-md-6">
+        <div class="col-12
+                    offset-md-3 col-md-6">
 
           <hr>
 
@@ -75,7 +71,7 @@
           <hr class="space-double">
 
           <p>
-            Copyright &copy; 2014-2015 Ian Li
+            Copyright (c) 2014-{{ site.time | date: '%Y' }} Ian Li
           </p>
         </div>
       </div>

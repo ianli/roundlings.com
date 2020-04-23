@@ -11,7 +11,7 @@ sitemap:
 
   <div class="row">
 
-    <div class="col-xs-12
+    <div class="col-12
                 col-md-6
                 header">
 
@@ -20,20 +20,8 @@ sitemap:
            alt="The Roundlings by Ian Li"
            title="The Roundlings by Ian Li">
 
-      <!--
-      <div class="social
-                  clearfix">
-        <a href="https://www.facebook.com/roundlings">
-          <i class="fa fa-facebook-square"></i>
-        </a>
-        <a href="https://twitter.com/roundlings">
-          <i class="fa fa-twitter-square"></i>
-        </a>
-      </div>
-      -->
-
-      <div class="visible-md
-                  visible-lg"
+      <div class="d-none
+                  d-md-block"
            style="text-align:center;">
         <hr class="space-double">
         {% include tinyletter.html %}
@@ -49,7 +37,7 @@ sitemap:
 
       {% when 1 %}
 
-        {% capture post_class %} col-xs-12 col-md-6 {% endcapture %}
+        {% capture post_class %} col-12 col-md-6 {% endcapture %}
 
         {% capture post_image %}
           {{ post.image | replace: '<!--size-->', '640' }}
@@ -57,7 +45,7 @@ sitemap:
 
       {% when 2 or 3 or 4 %}
 
-        {% capture post_class %} col-xs-12 col-sm-6 col-md-4 {% endcapture %}
+        {% capture post_class %} col-12 col-sm-6 col-md-4 {% endcapture %}
 
         {% capture post_image %}
           {{ post.image | replace: '<!--size-->', '640' }}
@@ -65,7 +53,7 @@ sitemap:
 
       {% when 5 %}
 
-        {% capture post_class %} col-xs-6 col-sm-6 col-md-2 {% endcapture %}
+        {% capture post_class %} col-6 col-sm-6 col-md-2 {% endcapture %}
 
         {% capture post_image %}
           {{ post.image | replace: '<!--size-->', '640' }}
@@ -73,7 +61,7 @@ sitemap:
 
       {% else %}
 
-        {% capture post_class %} col-xs-6 col-sm-3 col-md-2 {% endcapture %}
+        {% capture post_class %} col-6 col-sm-3 col-md-2 {% endcapture %}
 
         {% capture post_image %}
           {{ post.image | replace: '<!--size-->', '320' }}
@@ -87,16 +75,16 @@ sitemap:
          style="text-align:center">
 
         <img src="{{ post_image }}"
-             class="img-rounded
-                    img-responsive
-                    post-img">
+             class="rounded
+                    img-fluid
+                    border">
 
       </a>
 
       {% if forloop.index == 1 %}
 
-        <div class="visible-xs
-                    visible-sm"
+        <div class="d-block
+                    d-md-none"
             style="text-align:center;">
           <hr class="space">
           {% include tinyletter.html %}
