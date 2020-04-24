@@ -63,7 +63,7 @@ h1 {
 
 nav > a {
   display: inline-block;
-  margin-right: 16px;
+  margin: 0 8px;
   font-weight: bold;
   color: rgba(0, 0, 0, .87);
   text-decoration: none;
