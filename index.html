@@ -6,94 +6,26 @@ sitemap:
   lastmod: 2015-01-13T00:00:00+00:00
 ---
 
-<div class="container
-            container-index">
-
+<div class="container">
   <div class="row">
+    <div class="col-12 col-lg-10 offset-lg-1">
+      <div class="row">
+        {% for post in site.posts %}
+    
+          {% capture post_image %}
+            {{ post.image | replace: '<!--size-->', '320' }}
+          {% endcapture %} 
 
-    <div class="col-12
-                col-md-6
-                header">
-
-      <img src="{{ site.baseurl }}/img/roundlings-logo.svg"
-           class="logo"
-           alt="The Roundlings by Ian Li"
-           title="The Roundlings by Ian Li">
-
-      <div class="d-none
-                  d-md-block"
-           style="text-align:center;">
-        <hr class="space-double">
-        {% include tinyletter.html %}
+          <a
+            href="{{ post.url }}"
+            class="col-4 col-md-3 post-item tex6t-center"
+          >
+            <img
+              src="{{ post_image }}"
+              class="rounded img-fluid border">
+          </a>
+        {% endfor %}
       </div>
-
-      <hr class="space">
-
     </div>
-
-    {% for post in site.posts %}
-
-      {% case forloop.index %}
-
-      {% when 1 %}
-
-        {% capture post_class %} col-12 col-md-6 {% endcapture %}
-
-        {% capture post_image %}
-          {{ post.image | replace: '<!--size-->', '640' }}
-        {% endcapture %}
-
-      {% when 2 or 3 or 4 %}
-
-        {% capture post_class %} col-12 col-sm-6 col-md-4 {% endcapture %}
-
-        {% capture post_image %}
-          {{ post.image | replace: '<!--size-->', '640' }}
-        {% endcapture %}
-
-      {% when 5 %}
-
-        {% capture post_class %} col-6 col-sm-6 col-md-2 {% endcapture %}
-
-        {% capture post_image %}
-          {{ post.image | replace: '<!--size-->', '640' }}
-        {% endcapture %}
-
-      {% else %}
-
-        {% capture post_class %} col-6 col-sm-3 col-md-2 {% endcapture %}
-
-        {% capture post_image %}
-          {{ post.image | replace: '<!--size-->', '320' }}
-        {% endcapture %}       
-
-      {% endcase %}
-
-      <a href="{{ post.url }}"
-         class="{{ post_class }}
-                post-item"
-         style="text-align:center">
-
-        <img src="{{ post_image }}"
-             class="rounded
-                    img-fluid
-                    border">
-
-      </a>
-
-      {% if forloop.index == 1 %}
-
-        <div class="d-block
-                    d-md-none"
-            style="text-align:center;">
-          <hr class="space">
-          {% include tinyletter.html %}
-          <hr class="space-double">
-        </div>
-      {% endif %}
-
-    {% endfor %}
-
   </div>
-
 </div>

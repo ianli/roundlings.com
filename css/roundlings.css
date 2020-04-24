@@ -162,7 +162,6 @@ header a:hover {
  * Page types
  */
 
-.container-index,
 .container-posts {
   margin-top:15px;
   margin-bottom:15px;
@@ -177,19 +176,11 @@ header a:hover {
 }
 
 /* Medium */
-@media (min-width: 992px) {
-  .container-index {
-    margin-top:64px;
-    margin-bottom:64px;
-  }
+@media (min-width: 992px) {s
 }
 
 /* Large */
 @media (min-width: 1200px) {
-  .container-index {
-    margin-top:120px;
-    margin-bottom:40px;
-  }
 
   .container-posts {
     margin-top:40px;
