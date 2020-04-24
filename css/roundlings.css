@@ -4,6 +4,14 @@
  * http://roundlings.com
  */
 
+:root {
+  --primary: #03A9F4;
+}
+
+html {
+  font-size: 24px;
+}
+
 body {
   background-color:#fff;
   height:100%;
@@ -15,7 +23,7 @@ body {
 
 a,
 a:hover {
-  color:#03A9F4;
+  color: var(--primary);
 }
 
 hr {
@@ -43,32 +51,58 @@ h5,
 h6 {
   margin:0 0 24px;
   font-weight: bold;
-  /* color:rgba(255,255,255,0.87); */
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+/****************************
+ * Nav
+ */
+
+nav > a {
+  display: inline-block;
+  margin-right: 16px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, .87);
+  text-decoration: none;
+}
+
+nav > a:hover {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+nav > a > .fab {
+  vertical-align: -2px;
+}
+
+nav > a:last-child {
+  margin-right: 0;
 }
 
 /****************************
  * Header
  */
 
-.header {
+header h1 {
+  margin: 0 0 -16px 0;
+  font-size: 3rem;
 }
 
-.header > a {
-  display:block;
+header h2 {
+  margin: 0;
+  font-size: 1.5rem;
 }
 
-.logo {
-  width:90%;
-  max-width:400px;
+header a {
+  color: rgba(0, 0, 0, .87);
+  text-decoration: none;
 }
 
-/****************************
- * Footer
- */
-
-footer {
-  margin:0 0 40px;
-  text-align:center;
+header a:hover {
+  text-decoration: none;
 }
 
 /****************************
@@ -83,11 +117,10 @@ footer {
   display: inline-block;
   padding: 0 16px;
   color: rgba(0,0,0,.87);
-  opacity: 0.5;
 }
 
 .rr-arrows a:hover {
-  opacity: 1;
+  color: var(--primary); 
 }
 
 /****************************
@@ -145,30 +178,14 @@ footer {
 
 /* Medium */
 @media (min-width: 992px) {
-  .header {
-    padding-top:48px;
-  }
-
-  .logo {
-    max-width:90%;
-  }
-
   .container-index {
     margin-top:64px;
     margin-bottom:64px;
-  }
-
-  .container-posts .header {
-    padding-top:0;
   }
 }
 
 /* Large */
 @media (min-width: 1200px) {
-  .header {
-    padding-top:120px;
-  }
-
   .container-index {
     margin-top:120px;
     margin-bottom:40px;
@@ -177,8 +194,5 @@ footer {
   .container-posts {
     margin-top:40px;
     margin-bottom:40px;
-  }
-  .container-posts .header {
-    padding-top:0;
   }
 }

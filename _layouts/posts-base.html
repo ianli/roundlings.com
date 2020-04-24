@@ -4,25 +4,9 @@ layout: default
 <div class="container
             container-posts">
   <div class="row">
-
     <div class="col-12
-                offset-md-3 col-md-6
-                header">
-
-      <a href="{{ site.baseurl }}/">
-        <img src="{{ site.baseurl }}/img/roundlings-logo.svg"
-             class="logo"
-             alt="The Roundlings by Ian Li"
-             title="The Roundlings by Ian Li">
-      </a>
-
-    </div>
-
-    <hr class="space">
-
-    <div class="col-12
-                rr-arrows"
-         style="text-align:center">
+                text-center
+                rr-arrows">
 
       {% if page.next %}
         <a href="{{ page.next.url }}">
@@ -37,7 +21,6 @@ layout: default
       {% endif %}
 
     </div>
-
   </div>
 </div>
 

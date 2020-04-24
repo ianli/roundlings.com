@@ -34,48 +34,29 @@
 </head>
 <body>
 
+  <div class="pt-3 pb-4">
+    {% include nav.html %}
+  </div>
+
+  <header class="pb-4 text-center">
+    <a href="/">
+      <h1>
+        Roundlings
+      </h1>
+      <h2>
+        by ianli
+      </h2>
+    </a>
+  </header>
+
   {{ content }}
 
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-12
-                    offset-md-3 col-md-6">
+  <footer class="pt-4 pb-4 text-center">
+    {% include nav.html %}
 
-          <hr>
-
-          <nav>
-            <a href="/about.html">
-              About</a>
-
-            &nbsp;&middot;&nbsp;
-
-            <a href="https://www.facebook.com/roundlings">
-              Facebook</a>
-
-            &nbsp;&middot;&nbsp;
-
-            <a href="https://twitter.com/roundlings">
-              Twitter</a>
-            
-            &nbsp;&middot;&nbsp;
-
-            <a href="http://pinterest.com/ianli/roundlings">
-              Pinterest</a>
-          </nav>
-
-          <hr class="space">
-
-          {% include tinyletter.html %}
-
-          <hr class="space-double">
-
-          <p>
-            Copyright (c) 2014-{{ site.time | date: '%Y' }} Ian Li
-          </p>
-        </div>
-      </div>
-    </div>
+    <p class="pt-4">
+      Copyright (c) 2014-{{ site.time | date: '%Y' }} Ian Li
+    </p>
   </footer
 
   {% include analytics.html %}
