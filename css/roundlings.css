@@ -123,6 +123,13 @@ header a:hover {
   color: var(--primary); 
 }
 
+.rr-arrows a.rr-disabled,
+.rr-arrows a.rr-disabled:hover {
+  color: rgba(0, 0, 0, .2);
+  cursor: not-allowed;
+}
+
+
 /****************************
  * Share buttons
  */
@@ -156,34 +163,4 @@ header a:hover {
 
 .post-body {
   /* Do nothing */
-}
-
-/****************************
- * Page types
- */
-
-.container-posts {
-  margin-top:15px;
-  margin-bottom:15px;
-}
-
-/****************************
- * Responsive
- */
-
-/* Small */
-@media (min-width: 768px) {
-}
-
-/* Medium */
-@media (min-width: 992px) {s
-}
-
-/* Large */
-@media (min-width: 1200px) {
-
-  .container-posts {
-    margin-top:40px;
-    margin-bottom:40px;
-  }
 }

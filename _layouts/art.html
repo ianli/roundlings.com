@@ -1,0 +1,85 @@
+---
+layout: default
+---
+
+{% for section in site.data.sections %}
+  {% for art_slug in section.art %}
+    {% if art_slug == page.slug %}
+      {% assign previous_art_slug = previous %}
+    {% endif %}
+    {% assign previous = art_slug %}
+  {% endfor %}
+{% endfor %}
+
+{% assign next_ = nil %}
+{% assign reverse_sections = site.data.sections | reverse %}
+{% for section in reverse_sections %}
+  {% assign reverse_art = section['art'] | reverse %}
+  {% for art_slug in reverse_art %}
+    {% if art_slug == page.slug %}
+      {% assign next_art_slug = next_ %}
+    {% endif %}
+    {% assign next_ = art_slug %}
+  {% endfor %}
+{% endfor %}
+
+<div class="text-center pb-3 rr-arrows">
+  {% if previous_art_slug %}
+    {% assign art = site.art | where: 'slug', previous_art_slug | first %}
+    {% if art %}
+      <a href="{{ art.url }}">
+        <i class="fas fa-angle-left"></i>
+      </a>
+    {% endif %}
+  {% else %}
+      <a class="rr-disabled">
+        <i class="fas fa-angle-left"></i>
+      </a>
+  {% endif %}
+
+  {% if next_art_slug %}
+    {% assign art = site.art | where: 'slug', next_art_slug | first %}
+    {% if art %}
+      <a href="{{ art.url }}">
+        <i class="fas fa-angle-right"></i>
+      </a>
+    {% endif %}
+  {% else %}
+    <a class="rr-disabled">
+      <i class="fas fa-angle-right"></i>
+    </a>
+  {% endif %}
+</div>
+
+<div class="container">
+  <div class="row">
+
+    {% if page.image_large %}
+      <div class="col-12 text-center">
+        <img src="{{ page.image_large }}"
+             class="rounded
+                    img-fluid
+                    border
+                    shadow-sm">
+        <hr class="space-double">
+      </div>
+    {% endif %}
+
+    <!-- Content -->
+    <div class="col-12
+                col-md-8 offset-md-2
+                col-lg-6 offset-lg-3">
+          
+      <h1 class="mb-0">{{ page.title }}</h1>
+      <p class="mb-0">{{ page.date | date: "%b %-d, %Y" }}</p>
+
+      <hr class="space">
+
+      <div class="post-body">
+        {{ content }}
+      </div>
+
+    </div>
+
+  </div>
+</div>

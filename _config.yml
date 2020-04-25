@@ -3,5 +3,18 @@ markdown: kramdown
 
 hostname: www.roundlings.com
 
+# Set collections
+collections:
+  art:
+    output: true
+
+# Set defaults for projects collection
+defaults:
+  - scope:
+      path: ""
+      type: art
+    values:
+      layout: art
+
 gems:
   - jekyll-redirect-from

@@ -1,0 +1,10 @@
+- id: hello
+  label: Hello
+  art:
+    - hello-murray
+
+- id: umbrella
+  label: Umbrella
+  art:
+    - umbrella-bunny
+    - umbrella-chicken
