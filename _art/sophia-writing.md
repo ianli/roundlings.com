@@ -1,8 +1,10 @@
 ---
-layout: posts
 title: Sophia Writing
 image: "img/content/sophia-writing-<!--size-->.png"
 image_large: "/img/content/sophia-writing-640.png"
+date: 2015-01-12
+redirect_from:
+  - /2015/01/12/sophia-writing.html
 ---
 
 Sophia has a plan for the new year.
