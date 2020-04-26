@@ -3,9 +3,12 @@ layout: posts
 title: The Birthday Parade
 image: "img/content/2014-10-06-birthday-parade-<!--size-->.png"
 image_large: "/img/content/2014-10-06-birthday-parade-960x427.png"
-redirect_from: "/2014/10/06/birthday-parade.html"
+redirect_from:
+  - "/2014/10/06/birthday-parade.html"
+  - "/2014/03/23/birthday-parade.html"
+date: 2014-03-23
 ---
- 
+
 The bunny invited his buddies for a birthday parade.
 He played the accordion, his favorite instrument, to put everyone into a party mood.
 
