@@ -1,10 +1,51 @@
 - id: hello
   label: Hello
   art:
+    - hello-sophia
+    - hello-herbert
+    - hello-roger
+    - hello-freda
     - hello-murray
+    - hello-carson
+    - hello-evaline
+
+- id: birthday
+  label: Birthday
+  art:
+    - birthday-bunny
+    - birthday-cat
+    - birthday-dino
+    - birthday-fox
+    - birthday-rhino
+    - birthday-chicken
+    - birthday-astro
+    - birthday-parade
+
+- id: public-radio
+  label: Public Radio
+  art:
+    - radio-sophia-listens-to-99-invisible
+    - radio-carson-listens-to-car-talk
+    - radio-herbert-listens-to-radiolab
+    - radio-freda-listens-to-fresh-air
+    - radio-roger-listens-to-splendid-table
+    - radio-murray-and-evaline-listen-to-this-american-life
 
 - id: umbrella
   label: Umbrella
   art:
     - umbrella-bunny
     - umbrella-chicken
+    - umbrella-cat-rhino
+    - umbrella-dino
+    - umbrella-fox
+    - umbrella-astro
+
+- id: miscellaneous
+  label: Miscellaneous
+  art:
+    - murray-felt-doll
+    - roger-celebrating
+    - murray-running
+    - sophia-writing
+    - new-notebook

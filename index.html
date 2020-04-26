@@ -9,6 +9,38 @@ sitemap:
 <div class="container">
   <div class="row">
     <div class="col-12 col-lg-10 offset-lg-1">
+      {% for section in site.data.sections %}
+        <h1 class="text-center">
+          {{ section.label }}
+        </h1>
+        
+        <div class="row pb-4 justify-content-center">
+          {% for art_slug in section.art %}
+            {% assign art = site.art | where: 'slug', art_slug | first %}
+
+            {% capture art_image %}
+              {{ art.image | replace: '<!--size-->', '320' }}
+            {% endcapture %} 
+
+            <a
+              href="{{ art.url }}"
+              class="col-4 col-md-3 post-item text-center"
+            >
+              <img
+                src="{{ art_image }}"
+                class="rounded img-fluid border">
+            </a>
+          {% endfor %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% if false %}
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-lg-10 offset-lg-1">
       <div class="row">
         {% for post in site.posts %}
     
@@ -29,3 +61,4 @@ sitemap:
     </div>
   </div>
 </div>
+{% endif %}
