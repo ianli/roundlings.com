@@ -3,6 +3,9 @@ layout: posts
 title: Introducing Roger
 image: "img/content/hello-series-chicken-<!--size-->.png"
 image_large: "/img/content/hello-series-chicken-640.png"
+date: 2014-10-26
+redirect_from:
+  - /2014/10/26/roger.html
 ---
 
 **Name:**<br>

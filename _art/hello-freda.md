@@ -3,6 +3,9 @@ layout: posts
 title: Introducing Freda
 image: "img/content/hello-series-dino-<!--size-->.png"
 image_large: "/img/content/hello-series-dino-640.png"
+date: 2014-10-27
+redirect_from:
+  - /2014/10/27/freda.html
 ---
 
 **Name:**<br>

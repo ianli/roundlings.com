@@ -3,6 +3,9 @@ title: Introducing Murray
 image: "img/content/hello-series-bunny-<!--size-->.png"
 image_large: "/img/content/hello-series-bunny-640.png"
 redirect_from: "/2014/10/25/murray.html"
+date: 2014-10-22
+redirect_from:
+  - /2014/10/22/murray.html
 ---
 
 **Name:**<br>

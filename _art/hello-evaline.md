@@ -3,6 +3,9 @@ layout: posts
 title: Introducing Evaline
 image: "img/content/hello-series-astro-<!--size-->.png"
 image_large: "/img/content/hello-series-astro-640.png"
+date: 2014-10-28
+redirect_from:
+  - /2014/10/28/evaline.html
 ---
 
 **Name:**<br>
