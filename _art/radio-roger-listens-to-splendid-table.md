@@ -3,6 +3,9 @@ layout: posts
 title: Roger listens to Splendid Table
 image: "img/content/public-radio-roger-<!--size-->.png"
 image_large: "/img/content/public-radio-roger-960x640.png"
+date: 2014-11-06
+redirect_from:
+  - /2014/11/06/roger-listens-to-splendid-table.html
 ---
 
 [Roger](/2014/10/26/roger.html) loves to bake while listening to public radio.

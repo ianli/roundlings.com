@@ -3,6 +3,9 @@ layout: posts
 title: Murray and Evaline listen to This American Life
 image: "img/content/public-radio-murray-evaline-<!--size-->.png"
 image_large: "/img/content/public-radio-murray-evaline-640x960.png"
+date: 2014-12-02
+redirect_from:
+  - /2014/12/02/murray-and-evaline-listen-to-this-american-life.html
 ---
 
 [Murray](/2014/10/22/murray.html) and [Evaline](/2014/10/28/evaline.html)

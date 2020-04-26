@@ -3,6 +3,9 @@ layout: posts
 title: Sophia listens to 99% Invisible
 image: "img/content/public-radio-sophia-<!--size-->.png"
 image_large: "/img/content/public-radio-sophia-640x960.png"
+date: 2014-10-30
+redirect_from:
+  - /2014/10/30/sophia-listens-to-99-invisible.html
 ---
 
 [Sophia](/2014/10/24/sophia.html)'s favorite podcast is [99% Invisible](http://99percentinvisible.org/), a radio show about design and architecture.

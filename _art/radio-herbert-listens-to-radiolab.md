@@ -3,6 +3,9 @@ layout: posts
 title: Herbert listens to Radiolab
 image: "img/content/public-radio-herbert-<!--size-->.png"
 image_large: "/img/content/public-radio-herbert-640x960.png"
+date: 2014-11-04
+redirect_from:
+  - /2014/11/04/herbert-listens-to-radiolab.html
 ---
 
 [Herbert](/2014/10/23/herbert.html)'s favorite public radio show is [Radiolab](http://www.radiolab.org/), a radio show about science, philosophy, and human experience.
