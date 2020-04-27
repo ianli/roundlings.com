@@ -9,7 +9,9 @@ sitemap:
 # Newsletter
 {: .text-center}
 
-Receive drawings and updates in your inbox.
+Want to receive weekly drawings and updates in your email inbox?
+Subscribe to the Roundlings newsletter.
+{: .lead}
 
 {% include substack.html %}
 
