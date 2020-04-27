@@ -148,19 +148,3 @@ header a:hover {
 .rr-share a:hover {
   opacity:1;
 }
-
-
-/****************************
- * Post item
- */
-
-.post-item {
-  margin-bottom:30px;
-}
-  .post-item:hover {
-    text-decoration:none;
-  }
-
-.post-body {
-  /* Do nothing */
-}
