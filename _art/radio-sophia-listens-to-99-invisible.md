@@ -1,5 +1,4 @@
 ---
-layout: posts
 title: Sophia listens to 99% Invisible
 image: "img/content/public-radio-sophia-<!--size-->.png"
 image_large: "/img/content/public-radio-sophia-640x960.png"

@@ -1,5 +1,4 @@
 ---
-layout: posts
 title: Introducing Herbert
 image: "img/content/hello-series-cat-<!--size-->.png"
 image_large: "/img/content/hello-series-cat-640.png"

@@ -1,5 +1,4 @@
 ---
-layout: posts
 title: Introducing Evaline
 image: "img/content/hello-series-astro-<!--size-->.png"
 image_large: "/img/content/hello-series-astro-640.png"

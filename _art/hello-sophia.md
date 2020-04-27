@@ -1,5 +1,4 @@
 ---
-layout: posts
 title: Introducing Sophia
 image: "img/content/hello-series-fox-<!--size-->.png"
 image_large: "/img/content/hello-series-fox-640.png"

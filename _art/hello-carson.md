@@ -1,5 +1,4 @@
 ---
-layout: posts
 title: Introducing Carson
 image: "img/content/hello-series-rhino-<!--size-->.png"
 image_large: "/img/content/hello-series-rhino-640.png"

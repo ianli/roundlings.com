@@ -1,5 +1,4 @@
 ---
-layout: posts
 title: Introducing Roger
 image: "img/content/hello-series-chicken-<!--size-->.png"
 image_large: "/img/content/hello-series-chicken-640.png"

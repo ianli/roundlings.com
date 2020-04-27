@@ -1,5 +1,4 @@
 ---
-layout: posts
 title: Carson listens to Car Talk
 image: "img/content/public-radio-carson-<!--size-->.png"
 image_large: "/img/content/public-radio-carson-960x640.png"

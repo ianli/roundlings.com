@@ -1,5 +1,4 @@
 ---
-layout: posts
 title: Herbert listens to Radiolab
 image: "img/content/public-radio-herbert-<!--size-->.png"
 image_large: "/img/content/public-radio-herbert-640x960.png"
