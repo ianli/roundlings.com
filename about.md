@@ -15,6 +15,7 @@ Roundlings are cute and cuddly characters created by Ian Li.
 This website is a repository of illustrations, comics, and writings that feature the Roundlings.
 
 ## Early history
+{: .text-center}
 
 The first Roundling I drew was the blue bunny in October 2011.
 The character was inspired by a picture of a baby swinging in a pink bunny suit.
