@@ -1,5 +1,6 @@
 ---
 layout: default-centered
+title: Newsletter
 sitemap:
   priority: 1
   changefreq: daily

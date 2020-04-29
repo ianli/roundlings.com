@@ -1,5 +1,6 @@
 ---
 layout: default-centered
+title: About
 sitemap:
   priority: 0.5
   changefreq: monthly
